@@ -5,16 +5,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>JY&TT</title><script async src="http://c.cnzz.com/core.php"></script>
 <link rel="stylesheet" href="css/all.min.css">
+<script type="text/javascript" src="js/jquery.js"></script>	
 
 </head>
 <body>
 <script>
-window.onload=function(){
-    var flag= IsPC();
+$(document).ready(function(){
+   var flag= IsPC();
    if(flag==false){
    window.location.href="phone.html";
    }
-}
+});
 function IsPC() {
     var userAgentInfo = navigator.userAgent;
     var Agents = ["Android", "iPhone",
