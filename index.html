@@ -33,14 +33,22 @@
             <input type="text" name="pwd" placeholder="验证码" autocomplete="off" value="">
         </div>
         <div class="login-btn">
-            <input type="button" value="登录">
+            <input type="button" value="登录" onclick="toLogin()">
         </div>
     </div>
 
 </div>
+<script>
+function toLogin(){
+ var k = $("input[name='pwd']")[0].value;
+ var kk = md5(k);
+ window.location.href=kk+".html";
 
+}
+</script>
 </body>
 </html>
 
 <script src="js/jquery-1.7.2.js"></script>
 <script src="js/ban.js"></script>
+<script src="js/md5.min.js"></script>
